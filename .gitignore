@@ -1,3 +1,4 @@
+/app/views/layouts/_font_awesome.html.erb
 *.rbc
 capybara-*.html
 .rspec
