@@ -1,8 +1,8 @@
 class LotteriesController < ApplicationController
-
   def new
     @pickup_lottery = Lottery.new
     @pickup_lottery.fortune = get_random_fortune()
+    render :action => "index"
   end
 
   def index
