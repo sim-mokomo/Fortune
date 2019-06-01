@@ -7,9 +7,13 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render "layouts/font_awesome" %>
   </head>
 
   <body>
+    <nav class="navbar navbar-light bg-light">
+        <span class="fas fa-cross">おみくじ屋<span class="fas fa-cross"></span></span>
+    </nav>
     <%= yield %>
   </body>
 </html>
