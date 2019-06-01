@@ -1,1 +1,42 @@
 @import "bootstrap";
+
+p{
+  color: #333333;
+}
+
+.index_title{
+  p{
+    font-size: 70px;
+    margin: 0px;
+  }
+}
+
+.container{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.ask_lottery_draw{
+  font-size: 40px;
+  p{
+    padding-top: 60px;
+    line-height: 30px;
+    margin: 0px;
+  }
+}
+
+.lottery_result{
+  font-size: 350px;
+  p{
+    margin-bottom: 0px;
+    line-height: 400px;
+  }
+}
+
+.container_footer{
+  height: 200px;
+  .lottery_footer{
+    padding-top: 40px;
+    font-size: 70px;
+  }
+}

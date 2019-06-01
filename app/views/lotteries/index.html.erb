@@ -1,6 +1,25 @@
-<h1>どうぞ、おみくじを引いてみてください！</h1>
+<div class="index_title text-center container-fluid bg-primary">
+  <p>
+    <span class="fas fa-cross">おみくじ屋<span class="fas fa-cross"></span></span>
+  </p>
+</div>
 
-<%= button_to "おみくじを引く", {controller: "lotteries", action: "new"}, {method: :get} %>
-<% if @pickup_lottery != nil then %>
-  <h1><%= @pickup_lottery.fortune %></h1>
-<% end %>
+<div class="container-fluid bg-warning">
+  <div class="ask_lottery_draw col-md-12 text-center">
+    <p>おみくじを引いてみてください！</p>
+  </div>
+
+  <div class="lottery_result col-lg-12 text-center">
+    <% if @pickup_lottery != nil then %>
+      <span class="">
+        <p><%= @pickup_lottery.fortune %></p>
+      </span>
+    <% end %>
+  </div>
+</div>
+
+<div class="container-flueid bg-primary container_footer">
+  <div class="lottery_footer text-center">
+    <%= button_to "おみくじを引く", {controller: "lotteries", action: "new"}, method: :get%>
+  </div>
+</div>
