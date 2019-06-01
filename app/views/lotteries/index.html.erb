@@ -1,3 +1,6 @@
 <h1>どうぞ、おみくじを引いてみてください！</h1>
 
-<%= button_to "おみくじを引く",{controller: "lotteries",action: "new"},{method: :get} %>
+<%= button_to "おみくじを引く", {controller: "lotteries", action: "new"}, {method: :get} %>
+<% if @pickup_lottery != nil then %>
+  <h1><%= @pickup_lottery.fortune %></h1>
+<% end %>
